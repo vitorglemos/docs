@@ -18,7 +18,10 @@ driver.get("http://www.google.com");
 driver.quit();
   {{< / code-panel >}}
   {{< code-panel language="python" >}}
-# We don't have a Python code sample yet -  Help us out and raise a PR  
+driver = webdriver.Remote(command_executor="http://www.example.com",
+                          desired_capabilities={"browserName": "firefox"})
+driver.get("http://www.google.com")
+driver.close()  
   {{< / code-panel >}}
   {{< code-panel language="csharp" >}}
 // We don't have a C# code sample yet -  Help us out and raise a PR
